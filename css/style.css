@@ -505,11 +505,15 @@ blockquote small {
     width: 6px;
     height:6px;
 }
-::-webkit-scrollbar-track-piece{
-    /*background:#cccccc ;*/
-    background-color:rgba(0,0,0,0.3);
-    -webkit-border-radius: 3px;
-}
+
+
+/*::-webkit-scrollbar-track-piece{*/
+    /*!*background:#cccccc ;*!*/
+    /*background-color:rgba(0,0,0,0.3);*/
+    /*-webkit-border-radius: 3px;*/
+/*}*/
+
+
 ::-webkit-scrollbar-thumb:vertical{
     height: 5px;
     /*background: #999999;*/
@@ -523,12 +527,14 @@ blockquote small {
     color-stop(.6,#54DE5D));*/
     -webkit-border-radius: 5px;
 }
-::-webkit-scrollbar-thumb:horizontal{
-    width: 5px;
-    /*background: #cccccc;*/
-    background: #ddd;
-    -webkit-border-radius: 6px;
-}
+
+
+/*::-webkit-scrollbar-thumb:horizontal{*/
+    /*width: 5px;*/
+    /*!*background: #cccccc;*!*/
+    /*background: #ddd;*/
+    /*-webkit-border-radius: 6px;*/
+/*}*/
 /*更改全局滚动条样式OVER*/
 /**********新增CSS OVER**********/
 .side-menu ul li > a {
@@ -1282,8 +1288,10 @@ hr {
 }
 
 .modal-footer, .ui-dialog-buttonpane, .dark-footer {
-    padding: 10px 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    /*padding: 10px 15px;*/
+    padding:10px 0px 6px 0px;
+    /*border-top: 1px solid rgba(255, 255, 255, 0.11);*/
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     /*text-align: left;*/
 }
 
@@ -1295,7 +1303,8 @@ hr {
 }
 
 .modal .btn:hover, .dark .btn:hover {
-    background: rgba(0,0,0,0.4);
+    /*background: rgba(0,0,0,0.4);*/
+    background:#C0C0C0;
 }
 
 .modal-close {
@@ -1350,7 +1359,8 @@ hr {
     margin-top: 0;
     color: #fff;
     font-weight: normal;
-    opacity: 0.3;
+    /*opacity: 0.3;*/
+    opacity: .7;
 }
 
 /* Alerts */
@@ -1749,7 +1759,7 @@ a.list-group-item.active > .badge,
 .page-title {
     padding: 8px 15px 9px;
     font-size: 15px;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    /*border-bottom: 1px solid rgba(255,255,255,0.15);*/
     margin: 0;
 }
 
@@ -2349,4 +2359,28 @@ a.list-group-item.active > .badge,
 /*更改bootstrap-table列的操作框的宽度*/
 .dropdown-menu{
     min-width: 171px;
+}
+.bootstrap-table{
+    border: 1px solid rgba(204, 204, 204, 0.2);
+}
+.group-Style{
+    margin-left:0px;
+    position: relative;
+    right: 16px;
+}
+.form-horizontal .control-label{
+    padding-top: 12px;
+    letter-spacing: 1px;
+}
+input.addtableRowInput {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+input.addtableRowInput:focus{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+button.btn:hover{
+    background:#C0C0C0;
+}
+.fixed-table-toolbar{
+    background: #123337;
 }
