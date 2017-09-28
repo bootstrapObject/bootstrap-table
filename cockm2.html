@@ -20,11 +20,6 @@
     <link rel="stylesheet" href="css/bstable/b-t2.css">
     <link rel="stylesheet" href="css/bstable/bsts2.css">
 <!--    <link rel="stylesheet" href="css/bstable/bootstrap-table-self.css">-->
-    <style>
-        .none{
-            display: none;
-        }
-    </style>
 </head>
 <body>
 <header id="header" class="media">
@@ -248,11 +243,11 @@
             <!--      <h3 class="block-title">业务管理与设置</h3>-->
             <div class="table-responsive overflow">
                 <div id="btnAddRemove">
-                    <button class="btn btn-default" id="addtable4Row">
+                    <button class="btn btn-default" id="addtable4Row" style="margin-left: 10px;margin-right: 10px;">
                  <!--       <span>新增</span>-->
                         <span class="glyphicon glyphicon-plus"></span>
                     </button>
-                    <button class="btn btn-default" id="deltable4Row">
+                    <button class="btn btn-default" id="deltable4Row" style="margin-right: 20px;">
                   <!--      <span>删除</span>-->
                         <span class="glyphicon glyphicon-remove"></span>
                     </button>
@@ -279,7 +274,7 @@
                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                                     </button>
                                     <button type="button" class="btn btn-primary footer-btn" id="btn-addtableRow">
-                                        提交更改
+                                        提交
                                     </button>
                                 </div>
                             </div>
@@ -304,7 +299,7 @@
                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                                     </button>
                                     <button type="button" class="btn btn-primary footer-btn" id="btn-changetableRow">
-                                        提交更改
+                                        提交
                                     </button>
                                 </div>
                             </div>
@@ -328,7 +323,7 @@
                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                                     </button>
                                     <button type="button" class="btn btn-primary footer-btn" data-dismiss="modal" id="btn-ConfirmdelRow">
-                                        提交更改
+                                        提交
                                     </button>
                                 </div>
                             </div>
@@ -338,7 +333,6 @@
                 <table id="table6"></table>
             </div>
         </div>
-<!--        <input type="text" class="rowCellInput none" value="">-->
     </section>
     <!-- Older IE Message -->
     <!--[if lt IE 9]>
@@ -501,14 +495,14 @@
             $("#addtableRow-modal>.modal-dialog>.modal-content>.modal-body>.form-horizontal").html("");
             var length = titleText.length;
             for(var i=0;i<length;i++){
-                var formGroup = $('<div class="form-group">'+
+                var formGroup = $('<div class="form-group group-Style">'+
                         '<div class="col-md-8">'+
                         '<input type="text" class="form-control input-sm m-t-15 addtableRowInput">'+
                         '</div>'+
                         '</div>');
                 var label = $('<lable class="col-md-3 control-label">'+
                         titleText[i]+
-                        ':</lable>');
+                        '</lable>');
                 $(formGroup).prepend(label);
                 $("#addtableRow-modal>.modal-dialog>.modal-content>.modal-body>.form-horizontal").append(formGroup);
             }
