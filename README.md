@@ -6,7 +6,10 @@ cockm2.html效果如下：
 
 核心代码：
 ```
-   $(function(){
+//当年代码比较low 有更多更好的方法实现这功能 也有更漂亮简洁的代码可实现
+
+
+    $(function(){
         var field = ["name","descrption"],
                 titleText = ["驾驶舱名称","驾驶舱描述"];
         $("#table6").bootstrapTable({
