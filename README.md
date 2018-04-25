@@ -2,7 +2,7 @@
 
 cockm2.html效果如下：
 
-![](images/img.gif)
+![](images/img.gif)hghfghg
 
 核心代码：
 ```
