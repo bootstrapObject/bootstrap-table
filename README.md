@@ -1,7 +1,7 @@
 # bootstrap-table插件实现增删改功能
 
 cockm2.html效果如下：
-gfgf
+
 ![](images/img.gif)
 
 核心代码：
