@@ -1,5 +1,5 @@
 # bootstrap-table插件实现增删改功能
-
+框框要
 cockm2.html效果如下：
 
 ![](images/img.gif)
